@@ -1,8 +1,10 @@
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Press+Start+2P&display=swap');
 /* MAIN */
-body{
-    background-color: #18191F;`
+html{
+    overflow-x: hidden;
+    background-color: #18191F;
 }
 li {
     list-style: none;
@@ -16,18 +18,18 @@ li {
 }
 /* HEADER */
 header {
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    height: 84px;
+    flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
-    height: 84px;
     background-color: #F5F7FA;
 }
 
 ul {
-    display: inline-flex;
-    width: 1440px;
-    height: 84px;
+    display: flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
@@ -35,7 +37,6 @@ ul {
 }
 
 ul li {
-    display: inline-block;
     list-style: none;
 }
 
@@ -47,6 +48,7 @@ ul li a {
 }
 
 .logo {
+    display: flex;
     margin-right: auto;
     margin-left: 105px;
 }
@@ -56,14 +58,13 @@ ul li a {
 }
 
 .button {
-    display: flex;
+    display: inline-flex;
     margin-left: auto;
     margin-right: 120px;
 }
 
 .login-btn {
     color: #4CAF4F;
-    display: flex;
     padding: 10px 20px;
     align-items: center;
     gap: 10px;
@@ -74,7 +75,6 @@ ul li a {
 
 .signup-btn {
     color: #F5F7FA;
-    display: flex;
     padding: 10px 20px;
     align-items: center;
     gap: 10px;
@@ -83,16 +83,86 @@ ul li a {
     margin-left: 14px;
     background-color: #4CAF4F;
 }
-
+/* HERO SECTION */
 .hero {
-
-    display: flex;
-    background: #F5F7FA;
     display: flex;
     padding: 96px 144px;
     align-items: center;
     gap: 104px;
-    align-self: stretch;
+    align-self: stretch;   
+    background: #F5F7FA;
+}
+
+.text {
+    font-weight: 600;
+    color: #4D4D4D;
+    font-size: 51px;
+}
+
+.frame-1 {
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 76px;
+    font-family: 'Inter', sans-serif;
+    margin-left: 104px;
+}
+
+.frame-1 li {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 32px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+.register-btn {
+    color: #F5F7FA;
+    display: flex;
+    padding: 14px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    background-color: #4CAF4F;
+    border: transparent;
+}
+
+span {
+    color: #4CAF4F;
+}
+
+.frame-2 {
+    margin-left: 104px;
+}
+
+/* CLIENTS */
+.clients {
+    display: flex;
     width: 100%;
-    height: 100vh;
+    padding: 0px 144px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EFEFEF;
+}
+
+.clients h1 {
+    margin-top: 40px;
+    color:#4D4D4D;
+    text-align: center;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+.clients h3 {
+    color:#717171;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
