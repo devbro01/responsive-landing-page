@@ -8,23 +8,28 @@
     font-family: 'Poppins', sans-serif;
 }
 /* HEADER */
-ul {
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 1440px;
     height: 84px;
-    flex-shrink: 0;   
+    background-color: #F5F7FA;
+}
+
+ul {
+    display: flex;
+    width: 1440px;
+    height: 84px;
+    flex-shrink: 0;
+    gap: 25px;
 }
 
 ul li {
-    justify-content: space-around;
+    color: #111;
 }
 
 ul li a {
+    gap: 25px;
     text-decoration: none;
-    color: var(--text-gray-900, #18191F);
-    /* Body/Medium/Body 2 */
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
 }
