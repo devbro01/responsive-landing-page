@@ -4,7 +4,7 @@
 /* MAIN */
 html{
     overflow-x: hidden;
-    background-color: #EFEFEF;
+    image-rendering: optimizeSpeed;
 }
 li {
     list-style: none;
@@ -255,7 +255,7 @@ p {
 /* UNLOCK */
 .unlock {
     display: flex;
-    width: 1440px;
+    width: 100%;
     padding: 0px 144px;
     justify-content: space-between;
     align-items: center;
@@ -306,4 +306,77 @@ p {
     border: transparent;
     border-radius: 4px;
     background: var(--brand-primary, #4CAF4F);
+}
+/* achievements */
+.achievements {
+    display: flex;
+    width: 100%;
+    padding: 64px 144px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5F7FA;
+}
+.section-1 {
+    margin-left: 72px;
+    width: 100%;
+    display: flex;
+    width: 540px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex-shrink: 0;
+}
+.section-1 p {
+    align-self: stretch;
+    text-align: start;
+    color: var(--text-gray-900, #18191F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.section-1 h1 {
+    align-self: stretch;
+    color:#4D4D4D;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px;
+}
+
+/* SECTION-2 */
+.section-2 {
+    margin-left: 72px;
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    gap: 30px; 
+    width: 100%;
+}
+.section-2 h1 {
+    color: var(--neutral-d-grey, #4D4D4D);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+.section-2 p {
+    color: var(--neutral-grey, #717171);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.section-2 .layouts {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
